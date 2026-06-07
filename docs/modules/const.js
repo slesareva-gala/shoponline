@@ -1,6 +1,6 @@
 import { bagErrors } from './errors.js';
 
-const API_URL = 'http://a1262840.xsph.ru/';
+const API_URL = 'https://a1262840.xsph.ru/';
 const GOODS_URL = `${API_URL}api/goods`;
 const CATEGORY_URL = `${API_URL}api/categories`;
 const UNIT_URL = `${API_URL}api/units`;

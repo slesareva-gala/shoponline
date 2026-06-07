@@ -1,0 +1,77 @@
+*:focus {
+  outline: 2px solid #6d5bd0;
+}
+
+section.authorization .container {
+  display: flex;
+  justify-content: end;
+  padding-top: 10px;
+}
+.autch {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6e6893;
+}
+.autch__name {
+  color: #6d5bd0;
+}
+
+.autch__btn {
+  background-color: transparent;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/autch-face.svg');
+}
+
+.panel__autch {
+  display: none;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 5px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.panel__autch.open {
+  display: flex;
+}
+
+.panel__autch .password {
+  background: #f4f2ff;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  width: 130px;
+}
+
+.text-warning {
+  display: none;
+  color: tomato;
+}
+.button-ui_form,
+.button-ui_exit {
+  background: #6d5bd0;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  padding: 6px 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button-ui_exit {
+  display: none;
+}
+.button-ui_exit.open {
+  display: inline-block;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "shoponline",
+  "version": "1.0.1",
+  "description": "final NodeJS course  project ",
+  "main": "entry.cjs",
+  "scripts": {
+    "start": "node entry",
+    "dev": "nodemon entry",
+    "lint": "eslint . --fix"
+  },
+  "type": "module",
+  "keywords": [
+    "node",
+    "app"
+  ],
+  "author": "Gala Slesareva",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.1.14",
+    "prettier": "3.2.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.20.0"
+  }
+}

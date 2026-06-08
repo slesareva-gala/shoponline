@@ -61,7 +61,7 @@ blockAutch.addEventListener('click', async e => {
     let autch = null;
     const password = inputPassword.value;
     if (password.trim() !== '') {
-      appGoods.body.password = password.slice(0, 10).trim();
+      appGoods.body.password = password.slice(0, 10);
       autch = await appGoods.query('autch');
     }
     if (autch === null) {

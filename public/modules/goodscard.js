@@ -15,6 +15,7 @@ const defaultGood = {
   discount: 0,
   price: 0,
   inwork: false,
+  image: defNameImage,
 };
 
 const setDefaultSelect = (select, value) => {
@@ -95,9 +96,13 @@ const createGoodCard = async (mode, good) => {
     good.discount,
   )} &#8381;`;
 
-  if (mode === 'eye' || mode === 'edit') {
+  if (mode === 'add' || mode === 'eye' || mode === 'edit') {
     const cardImage = modalCard.querySelector('.card__label_file-add img');
-    if (await hasPicGood(good.image)) cardImage.src = good.image;
+    const nameImage = (await hasPicGood(good.image))
+      ? good.image
+      : defNameImage;
+    cardImage.src = nameImage;
+    cardImage.alt = `изображение товара${nameImage === defNameImage ? ' отсутствует' : ': ' + good.title}`;
   }
   if (mode === 'del') {
     modalCard.querySelector('.card__label_file-add').remove();

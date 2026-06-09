@@ -1,4 +1,5 @@
-import { hasPicGood } from './const.js';
+import create, { hasPicGood } from './const.js';
+const { defNameImage } = create;
 import { listModal } from './modal.js';
 
 const modalTemplatePic = document.getElementById('modal-template-pic');
@@ -8,7 +9,9 @@ export const viewingPicture = async (image, title) => {
   if (modalLayoutPic === null) return;
   const cloneModalPic = modalLayoutPic.cloneNode(true);
   if (await hasPicGood(image)) {
-    cloneModalPic.querySelector('img').src = image;
+    const modalImage = cloneModalPic.querySelector('img');
+    modalImage.src = image;
+    modalImage.alt = `изображение товара${image === defNameImage ? ' отсутствует' : ': ' + title}`;
   }
   cloneModalPic.querySelector('.title_pic').textContent = title;
 

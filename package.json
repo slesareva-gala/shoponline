@@ -4,8 +4,8 @@
   "description": "final NodeJS course  project ",
   "main": "entry.cjs",
   "scripts": {
-    "start": "node entry",
-    "dev": "nodemon entry",
+    "start": "node entry.cjs",
+    "dev": "nodemon entry.cjs",
     "lint": "eslint . --fix"
   },
   "type": "module",

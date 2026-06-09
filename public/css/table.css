@@ -106,4 +106,5 @@
 }
 .modal.table__modal_pic img {
   width: 100%;
+  min-height: 380px;
 }

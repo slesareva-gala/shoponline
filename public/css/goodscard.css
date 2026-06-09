@@ -167,6 +167,7 @@
   grid-area: file-add;
   justify-self: center;
   width: 200px;
+  min-height: 200px;
   height: fit-content;
   margin-bottom: 12px;
 }
